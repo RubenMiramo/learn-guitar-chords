@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>learn guitar codes</title>
+        <link rel="stylesheet" href="learnguitar.style.css">
+        <header>Learn guitar Chords By Ruben Miramontes</header>
+        <p class="contact"><a href="contact.html">Contact me</a></p>
+    </head>
+    <body>
+        <h1>Try selecting a different chord</h1>
+        <div class="guitar-diagram">
+            <!--stings-->
+          <div class="string" id="string-1"></div>
+           <div class="string"  id="string-2"></div>
+           <div class="string" id="string-3"></div>
+           <div class="string" id="string-4"></div>
+           <div class="string" id="string-5"></div>
+           <div class="string" id="string-6"></div>
+          <!--frets-->    
+          <hr class="frets" id="fret1">
+         <hr class="frets" id="fret2">
+         <hr class="frets" id="fret3">
+          <hr class="frets" id="fret4">
+          <hr class="frets" id="fret5">
+       <!--finger positions-->
+          <div class="finger-positions">
+            <div class="dot" id="dot-1"></div> 
+            <div class="dot" id="dot-2"></div>
+            <div class="dot" id="dot-3"></div>
+            <div class="dot" id="dot-4"></div>
+            </div>
+            </div>
+        <div class="button-container">
+        <select id="ChordSelector">
+        </select>
+        </div>
+        <script src="learnguitar.js"></script>
+        <!--guitar practice video resources-->
+        <div class="container">
+            <h2 class="headline">Guirar Video Practice Gallery</h2>
+            <p>Welcome feel free to look at any of the vidoes i have collected through youtube to help you practice the previous
+                chords on your own. As you come across a helpful video, add the id here.
+            </p>
+            <form>
+                <label for="videoId">Video Id</label>
+                <input type="text" name="videoId" id="videoId" placeholder="DF9&DFF6">
+                <button onclick="saveVideo(event)">Save The Video!</button>
+            </form>
+            <ul id="videosContainer">
+
+            </ul>
+        </div>
+        <div id = "popup" onclick="handlePopupClick()" class="closed">
+         <iframe width="560" height="315"
+         frame-border="0"
+         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen></iframe>
+        </div>
+        <script src="video player js.js"></script>
+    </body>
+</html>

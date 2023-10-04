@@ -1,0 +1,25 @@
+body {
+  background-color: #f9f4ef;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+    color: #716040;
+
+}
+
+@media only screen and (max-width: 320px) {
+  li {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  li {
+    font-size: 24px;
+  }
+}
